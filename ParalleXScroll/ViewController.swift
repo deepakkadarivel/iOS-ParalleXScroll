@@ -16,12 +16,17 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setup()
+        collectionView?.decelerationRate = UIScrollViewDecelerationRateNormal
+    }
 
+    func setup() {
         for i in 0...14 {
             images.append("\(i)@2x")
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -57,6 +62,10 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             let yOffset = ((collectionView.contentOffset.y - parallexCell.frame.origin.y) / imageHeight) * offsetSpeed
             parallexCell.offset(CGPointMake(0.0, yOffset))
         }
+    }
+    
+    override func preferredStatusBarStyle() -> UIStatusBarStyle {
+        return .LightContent
     }
 
 }
