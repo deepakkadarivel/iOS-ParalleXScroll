@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0082E19F1C5DF5FA00764BC4 /* Detail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0082E19E1C5DF5FA00764BC4 /* Detail.storyboard */; };
+		0082E1A11C5DF69700764BC4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0082E1A01C5DF69700764BC4 /* DetailViewController.swift */; };
 		00AAACD81C5C9383003AF81C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AAACD71C5C9383003AF81C /* AppDelegate.swift */; };
 		00AAACDA1C5C9383003AF81C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00AAACD91C5C9383003AF81C /* ViewController.swift */; };
 		00AAACDD1C5C9383003AF81C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00AAACDB1C5C9383003AF81C /* Main.storyboard */; };
@@ -31,6 +33,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0082E19E1C5DF5FA00764BC4 /* Detail.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Detail.storyboard; sourceTree = "<group>"; };
+		0082E1A01C5DF69700764BC4 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		00AAACD41C5C9383003AF81C /* ParalleXScroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ParalleXScroll.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		00AAACD71C5C9383003AF81C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		00AAACD91C5C9383003AF81C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +93,8 @@
 				00AAACD71C5C9383003AF81C /* AppDelegate.swift */,
 				00AAACD91C5C9383003AF81C /* ViewController.swift */,
 				00AAACDB1C5C9383003AF81C /* Main.storyboard */,
+				0082E19E1C5DF5FA00764BC4 /* Detail.storyboard */,
+				0082E1A01C5DF69700764BC4 /* DetailViewController.swift */,
 				00AAACE91C5C9773003AF81C /* parallaxCollectionViewCell.swift */,
 				00AAACDE1C5C9383003AF81C /* Assets.xcassets */,
 				00AAACE01C5C9383003AF81C /* LaunchScreen.storyboard */,
@@ -193,6 +199,7 @@
 				00AAAD041C5C9BCC003AF81C /* 4@2x.png in Resources */,
 				00AAAD021C5C9BCC003AF81C /* 2@2x.png in Resources */,
 				00AAAD071C5C9BCC003AF81C /* 7@2x.png in Resources */,
+				0082E19F1C5DF5FA00764BC4 /* Detail.storyboard in Resources */,
 				00AAAD061C5C9BCC003AF81C /* 6@2x.png in Resources */,
 				00AAACFD1C5C9BCC003AF81C /* 11@2x.png in Resources */,
 				00AAACDD1C5C9383003AF81C /* Main.storyboard in Resources */,
@@ -209,6 +216,7 @@
 				00AAACDA1C5C9383003AF81C /* ViewController.swift in Sources */,
 				00AAACEA1C5C9773003AF81C /* parallaxCollectionViewCell.swift in Sources */,
 				00AAACD81C5C9383003AF81C /* AppDelegate.swift in Sources */,
+				0082E1A11C5DF69700764BC4 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +364,7 @@
 				00AAACE81C5C9383003AF81C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

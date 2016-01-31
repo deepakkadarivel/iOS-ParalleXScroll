@@ -54,6 +54,13 @@ class ViewController: UICollectionViewController, UICollectionViewDelegateFlowLa
             return CGSizeMake(collectionView.bounds.size.width, 160)
     }
     
+    override func collectionView(collectionView: UICollectionView, didSelectItemAtIndexPath indexPath: NSIndexPath) {
+        let storyBoard = UIStoryboard(name: "Detail", bundle: nil)
+        let destination = storyBoard.instantiateViewControllerWithIdentifier("DetailVC") as! DetailViewController
+        destination.image = images[indexPath.row]
+        self.presentViewController(destination, animated: true, completion: nil)
+    }
+    
     override func scrollViewDidScroll(scrollView: UIScrollView) {
         guard let collectionView = self.collectionView else {return}
         guard let visibleCells = collectionView.visibleCells() as? [parallaxCollectionViewCell] else {return}

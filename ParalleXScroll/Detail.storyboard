@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="vfE-R4-brI">
+            <objects>
+                <viewController storyboardIdentifier="DetailVC" id="pOU-Ke-DxV" customClass="DetailViewController" customModule="ParalleXScroll" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Zcz-F9-hiF"/>
+                        <viewControllerLayoutGuide type="bottom" id="p3d-aq-uEV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZUx-nd-CMa">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="e1v-U1-woQ">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="Fpx-hk-hXl"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="e1v-U1-woQ" secondAttribute="trailing" id="IbA-lW-Aeu"/>
+                            <constraint firstItem="e1v-U1-woQ" firstAttribute="leading" secondItem="ZUx-nd-CMa" secondAttribute="leading" id="JoV-4R-1Q8"/>
+                            <constraint firstItem="e1v-U1-woQ" firstAttribute="top" secondItem="ZUx-nd-CMa" secondAttribute="top" id="Vr2-Rc-EEk"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="imageView" destination="e1v-U1-woQ" id="hMZ-YE-SYI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oSo-Et-Te0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="564" y="134"/>
+        </scene>
+    </scenes>
+</document>
